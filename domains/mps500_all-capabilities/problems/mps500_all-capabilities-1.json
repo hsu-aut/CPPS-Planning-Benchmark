@@ -141,16 +141,60 @@
 				"stepOccurrence": 1,
 				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#SupplyRawCylinder",
 				"properties": [
-					{prop1
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#RequiredLotSize_ID2", 
+						"value": 2
 					},
-					{prop2
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#RequiredColor_ID2", 
+						"value": "black"
+					}, 
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#RequiredCarrierID_ID3", 
+						"value": "?", 
+						"min": 1, 
+						"max": 8
+					}, 
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#RequiredCarrierSlot_ID3", 
+						"value": "?", 
+						"min": 1, 
+						"max": 4
+					}, 
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#RequiredCDiameter_ID3", 
+						"value": 40
 					}
-				]
+				],
 				"successor": 2
 			},
 			{
 				"stepIdentifier": 2,
-				"operatorIri": "AlternativeGate"
+				"stepOccurrence": 2,
+				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#Transport",
+				"properties": [
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#TargetStation_ID3",
+						"value": 3
+					}
+				],
+				"successor": 3
+			},
+			{
+				"stepIdentifier": 3,
+				"stepOccurrence": 3,
+				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/DrillignModule#CompleteDrilling",
+				"properties": [
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/DrillignModule#RequiredDrillingDepth3_ID",
+						"value": 30
+					}
+				],
+				"successor": 4
+			},
+			{
+				"stepIdentifier": 2,
+				"operatorIri": "AlternativeGate",
 				"successor": [
 					3,
 					4
