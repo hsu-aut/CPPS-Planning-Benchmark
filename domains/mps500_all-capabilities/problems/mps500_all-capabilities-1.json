@@ -1,0 +1,165 @@
+{
+	"domain": "../domain.json",
+	"init": {
+		"properties": [
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentColor_ID",
+				"value": "red"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentColor_ID",
+				"value": "silver"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentStackSize_DE",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentStackSize_DE",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentStackSize_DE",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentColor_ID",
+				"value": "red"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentColor_ID",
+				"value": "silver"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentStackSize_DE",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentStackSize_DE",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentStackSize_DE",
+				"value": 8
+			}
+		]
+	},
+	"goal": {
+		"product": {
+			"productClass": "cylinder",
+			"properties": [
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Color_TD",
+					"value": "black"
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#LotSize_TD",
+					"value": 2
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Diameter_TD",
+					"value": 40
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Bohrloch_TD",
+					"isComplex": true,
+					"values": [
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Diameter_TD",
+							"value": 20
+						},
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Depth_TD",
+							"value": 30
+						}
+					]
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Bohrloch_TD",
+					"isComplex": true,
+					"values": [
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Diameter_TD",
+							"value": 30
+						},
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Depth_TD",
+							"value": 30
+						}
+					]
+				}
+
+			]
+		},
+		"process-steps": [
+			{
+				"stepIdentifier": 1,	
+				"stepOccurrence": "$-1",
+				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#CameraCheck",
+				"properties": [],
+				"successors": [2]
+			}
+		]
+	},
+	"result": {
+		"planFound": true,
+		"plan-steps": [
+			{
+				"stepIdentifier": 1,
+				"stepOccurrence": 1,
+				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#SupplyRawCylinder",
+				"properties": [
+					{prop1
+					},
+					{prop2
+					}
+				]
+				"successor": 2
+			},
+			{
+				"stepIdentifier": 2,
+				"operatorIri": "AlternativeGate"
+				"successor": [
+					3,
+					4
+				]
+			}
+		],
+		"reason": "iri1 != iri2"
+	}
+}
+// Entscheidungen
+// Reason: Lassen wir offen - im at-Paper Future Work
+// Result: Mehrere Pläne sollten möglich sein (Array in Array). Neuer Plan nur, wenn andere process steps. Wenn nur andere Property-Values möglich, dann Property mit min, max und value. Value dann ?, min und max geben Range an

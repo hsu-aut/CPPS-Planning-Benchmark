@@ -1,0 +1,8 @@
+{
+	"name": "MPS500_all-capabilities",
+	"ontologyIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500",
+	"url": "https://raw.githubusercontent.com/hsu-aut/MPS500-Capabilities/main/MPS500-Capabilities_merged.owl",
+	"capabilities": [
+		"*"
+	]
+}
