@@ -141,17 +141,20 @@
 				"stepOccurrence": 1,
 				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#SupplyRawCylinder",
 				"properties": [
-					{prop1
+					{
+						// properties that are inputs of the capability and an actual value. These have to be solved by solver
 					},
 					{prop2
 					}
-				]
-				"successor": 2
+				],
+				"successors": []
 			},
 			{
 				"stepIdentifier": 2,
-				"operatorIri": "AlternativeGate"
-				"successor": [
+				"stepOccurrence": 2,
+				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/DrillingModule#Drilling",
+				"properties": [],
+				"successors": [
 					3,
 					4
 				]
