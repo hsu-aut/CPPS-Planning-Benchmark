@@ -1,0 +1,117 @@
+{
+	"domain": "../domain.json",
+	"init": {
+		"properties": [
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentColor_ID",
+				"value": "silver"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentColor_ID",
+				"value": "silver"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentStackSize_ID",
+				"value": 8
+			}
+		]
+	},
+	"goal": {
+		"product": {
+			"productClass": "thermometer",
+			"properties": [
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Color_TD",
+					"value": "red"
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#LotSize_TD",
+					"value": 3
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Diameter_TD",
+					"value": 40
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Bohrloch_TD",
+					"isComplex": true,
+					"values": [
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Diameter_TD",
+							"value": 30
+						},
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Depth_TD",
+							"value": 30
+						}
+					]
+				}
+			]
+		},
+		"process-steps": []
+	},
+	"result": {
+		"planFound": false,
+		"plans": []
+	}
+}
