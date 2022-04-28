@@ -220,11 +220,11 @@
 					{
 						"stepIdentifier": 5,
 						"stepOccurrence": 5,
-						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#CameraCheck",
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#Transport",
 						"properties": [
 							{
-								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#RequiredTargetImage_ID2",
-								"value": "someImage.jpg"
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#TargetStation_ID3",
+								"value": 4
 							}
 						],
 						"successors": [6]
@@ -232,6 +232,30 @@
 					{
 						"stepIdentifier": 6,
 						"stepOccurrence": 6,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#CameraCheck",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#RequiredTargetImage_ID2",
+								"value": "someImage.jpg"
+							}
+						],
+						"successors": [7]
+					},
+					{
+						"stepIdentifier": 7,
+						"stepOccurrence": 7,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#Transport",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#TargetStation_ID3",
+								"value": 6
+							}
+						],
+						"successors": [8]
+					},
+					{
+						"stepIdentifier": 8,
+						"stepOccurrence": 8,
 						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/PutInStorage#PutInStorage",
 						"properties": [
 							{
@@ -319,13 +343,13 @@
 						"successors": [5]
 					},
 					{
-						"stepIdentifier": 5,	
+						"stepIdentifier": 5,
 						"stepOccurrence": 5,
-						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#CameraCheck",
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#Transport",
 						"properties": [
 							{
-								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#RequiredTargetImage_ID2",
-								"value": "someImage.jpg"
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#TargetStation_ID3",
+								"value": 4
 							}
 						],
 						"successors": [6]
@@ -333,6 +357,30 @@
 					{
 						"stepIdentifier": 6,	
 						"stepOccurrence": 6,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#CameraCheck",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/CameraModule#RequiredTargetImage_ID2",
+								"value": "someImage.jpg"
+							}
+						],
+						"successors": [7]
+					},
+					{
+						"stepIdentifier": 7,
+						"stepOccurrence": 7,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#Transport",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#TargetStation_ID3",
+								"value": 7
+							}
+						],
+						"successors": [8]
+					},
+					{
+						"stepIdentifier": 8,	
+						"stepOccurrence": 8,
 						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/PrepareForShipping#PrepareForShipping",
 						"properties": [
 							{
