@@ -151,7 +151,7 @@
 								"value": 1 
 							}, 
 							{
-								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#RequiredCDiameter_ID3", 
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#RequiredDiameter_ID3", 
 								"value": 40
 							}
 						],
