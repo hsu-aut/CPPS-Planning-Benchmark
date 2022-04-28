@@ -1,0 +1,216 @@
+{
+	"domain": "../domain.json",
+	"init": {
+		"properties": [
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentColor_ID",
+				"value": "red"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentColor_ID",
+				"value": "silver"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack1CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack2CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#ProductStack3CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentColor_ID",
+				"value": "red"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentColor_ID",
+				"value": "black"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentColor_ID",
+				"value": "silver"
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentDiameter_ID",
+				"value": 40
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack1CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack2CurrentStackSize_ID",
+				"value": 8
+			},
+			{
+				"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawCylinderSupplyModule#ProductStack3CurrentStackSize_ID",
+				"value": 8
+			}
+		]
+	},
+	"goal": {
+		"product": {
+			"productClass": "thermometer",
+			"properties": [
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Color_TD",
+					"value": "silver"
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#LotSize_TD",
+					"value": 3
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Diameter_TD",
+					"value": 40
+				},
+				{
+					"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Bohrloch_TD",
+					"isComplex": true,
+					"values": [
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Diameter_TD",
+							"value": 30
+						},
+						{
+							"typeDescriptionIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/property-types#Depth_TD",
+							"value": 30
+						}
+					]
+				}
+			]
+		},
+		"process-steps": [
+			{
+				"stepIdentifier": 1,
+				"stepOccurrence": "$",
+				"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/PrepareForShipping#PrepareForShipping",
+				"properties": [
+					{
+						"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/PrepareForShipping#RequiredShipppingSlide_ID3",
+						"value": 2
+					}
+				],
+				"successors": []
+			}
+		]
+	},
+	"result": {
+		"planFound": true,
+		"plans": [
+			{
+				"plan-id": 1,
+				"plan-steps": [
+					{
+						"stepIdentifier": 1,
+						"stepOccurrence": 1,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#SupplyRawThermometer",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#RequiredLotSize_ID2", 
+								"value": 3
+							},
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#RequiredColor_ID2", 
+								"value": "silver"
+							}, 
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#RequiredCarrierID_ID3", 
+								"value": 2
+							}, 
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#RequiredCarrierSlot_ID3", 
+								"value": 1 
+							}, 
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/RawThermometerSupplyModule#RequiredCDiameter_ID3", 
+								"value": 40
+							}
+						],
+						"successors": [2]
+					},
+					{
+						"stepIdentifier": 2,
+						"stepOccurrence": 2,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#Transport",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#TargetStation_ID3",
+								"value": 3
+							}
+						],
+						"successors": [3]
+					},
+					{
+						"stepIdentifier": 3,
+						"stepOccurrence": 3,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/DrillignModule#CompleteDrilling",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/DrillignModule#RequiredDrillingDepth_ID3",
+								"value": 30
+							},
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/DrillignModule#RequiredDrillingDiameter_ID3",
+								"value": 30
+							}
+						],
+						"successors": [4]
+					},
+                    {
+						"stepIdentifier": 4,
+						"stepOccurrence": 4,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#Transport",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/TransportModule#TargetStation_ID3",
+								"value": 7
+							}
+						],
+						"successors": [5]
+					},
+					{
+						"stepIdentifier": 5,	
+						"stepOccurrence": 5,
+						"operatorIri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/PrepareForShipping#PrepareForShipping",
+						"properties": [
+							{
+								"iri": "http://www.hsu-hh.de/aut/ontologies/lab/MPS500/PrepareForShipping#RequiredShipppingSlide_ID3",
+								"value": 1
+							}
+						],
+						"successors": []
+					}
+				]
+			}
+		]
+	}
+}
